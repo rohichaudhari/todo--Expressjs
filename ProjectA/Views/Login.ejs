@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-700">
+  <div class="flex justify-center mt-40">
+    <div class="bg-white h-[400px] w-[600px] bg-white p-5 rounded-2xl shadow-2xl shadow-black flex justify-center ">
+      <div>
+      <div>
+        <h1 class="text-3xl font-bold underline text-green-700">Welcome Back</h1>
+        <p class="text-green-700">Please login to your account</p>
+      </div>
+      <br>
+      <form method="POST" action="/api/users/login">
+        <div>
+          <label  class="text-2xl text-green-700 font-bold" for="email">Email</label><br>
+          <input class="h-10 w-80 border-2 border-green rounded-lg border-green-700 text-green" type="email" name="email" id="email" required  placeholder="Enter email..."/>
+        </div>
+          
+        <br>
+        <div>
+          <label  class="text-2xl text-green-700 font-bold" for="password">Password</label><br>
+          <input class="h-10 w-80 border-2 border-green rounded-lg border-green-700 text-green" type="password" name="password" id="password" required placeholder="Enter password...."/>
+        </div>
+        <br>
+          <div>
+            <button class="h-10 w-80  border-2 rounded-lg border-green-700 bg-green-700 text-white font-bold"  type="submit">Login</button>
+          </div>
+        </form>
+        <div class="mt-2">
+          <a class="text-green-700" href="/api/users/register">Don't have an account? Sign up</a>
+        </div>
+      </div>
+      </div>
+    </div>
+    </body>
+    </html>
+
+      
+
+     
+

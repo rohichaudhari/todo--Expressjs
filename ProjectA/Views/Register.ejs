@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-700">
+  <div class="flex justify-center  mt-10  ">
+  <div class="h-[600px] w-[600px] bg-white p-5 rounded-2xl shadow-2xl shadow-black flex justify-center ">
+    <div>
+    <form method="POST" action="/api/users/register" class="mt-5">
+      <h1 class="text-3xl font-bold underline text-green-700">Create Your Account</h1>
+      <br>
+      <div>
+        <label class="text-2xl text-green-700 font-bold" for="firstName">Firstname:</label><br>
+        <input class="h-10 w-80 border-2 border-green rounded-lg border-green-700 text-green" type="text" name="firstName" id="firstName" placeholder="Enter your name..." required />
+      </div>
+      <br>
+      <div>
+        <label class="text-2xl text-green-700 font-bold" for="lastName">Lastname:</label><br>
+        <input class="h-10 w-80 border-2 border-green rounded-lg border-green-700 text-green" type="text" name="lastName" id="lastName" required  placeholder="Enter last name...."/>
+      </div>
+      <br>
+      <div>
+        <label  class="text-2xl text-green-700 font-bold" for="email">Email</label><br>
+        <input class="h-10 w-80 border-2 border-green rounded-lg border-green-700 text-green" type="email" name="email" id="email" required  placeholder="Enter email..."/>
+      </div>
+      <br>
+      <div>
+        <label  class="text-2xl text-green-700 font-bold" for="password">Password</label><br>
+        <input class="h-10 w-80 border-2 border-green rounded-lg border-green-700 text-green" type="password" name="password" id="password" required placeholder="Enter password...."/>
+      </div>
+      <br>
+      <div>
+        <button class="h-10 w-80  border-2 rounded-lg border-green-700 bg-green-700 text-white font-bold" type="submit">Register</button><br>
+        <a class="text-green-700" href="/api/users/login">Already have an account?</a>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+    
+
+
+      
